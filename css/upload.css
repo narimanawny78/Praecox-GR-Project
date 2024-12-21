@@ -1,0 +1,242 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#d8ebff;
+
+}
+
+::selection{
+  color: #fff;
+  background-color:#0f62fe;
+
+}
+.wrapper{
+  width: 700px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  color:#0f62fe;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form{
+  height: 167px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #0f62fe;
+  margin-bottom: 30px;
+}
+form :where(i, p){
+  color:#0f62fe;
+}
+form i{
+  font-size: 50px;
+}
+form p{
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+section .row{
+  margin-bottom: 10px;
+  background: #E9F0FF;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color:#0f62fe;
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background:#0f62fe;
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 232px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check{
+  font-size: 16px;
+}
+
+ .wrapper .btn-submit{
+  background-color: #0f62fe;
+  color: #fff;
+  cursor: pointer;
+  width: 30%;
+}
+
+/* medical history */
+/* .notes-input{
+  border: none !important ;  
+  cursor: none !important ;
+  margin: 10px;
+  padding: 0;
+} */
+.container{
+  max-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+  padding: 20px;
+  box-shadow: 0 2px 2px 3px rgba(0,0,0,0.0.1);
+}
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 15px;
+}
+.wrap h2{
+  color: #0f62fe;
+}
+.wrap hr{
+  width: 80%;
+}
+.add{
+  text-decoration: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #d8ebff;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dynamic class creation */
+
+.flex{
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 15px;
+}
+
+.delete{
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0f62fe;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 40px;
+  height: 30px;
+  color: #fff;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input{
+  padding: 8px 10px;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+}
+input:focus{
+  outline: 1px solid #fff;
+}
+
+textarea{
+  height: 100px; 
+  width: 70
+  .0px;
+  padding: 8px 10px;
+  background: #ddd;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+}
+
+textarea:focus{
+  outline: 1px solid #d8ebff;
+}
+
+
+.form-btn{
+  width: 200px;
+  padding: 10px;
+  margin: 2px;
+  background-color: #0f62fe;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  float: right;
+  clear: both;
+}
+.form-btn:hover{
+  background-color:#007bff ;
+}

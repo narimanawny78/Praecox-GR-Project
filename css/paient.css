@@ -1,0 +1,241 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :root {
+    --main-color: #0f62fe;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Cairo", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start Doctor Section */
+  /* .doctor {
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    margin: 100px 0;
+    margin-bottom:120px;
+  }
+  .doctor h1{
+    font-size: 60px;
+    color: var(--main-color);
+  }
+  @media (max-width: 767px) {
+    .doctor h1 {
+      font-size: 40px;
+    }
+  }
+.doctor .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+ .doctor .cards-content img{
+    width: 75%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    margin: 0;
+  }
+.doctor .cards-content h3{
+  margin: 0;
+  width: 75%;
+  padding-top: 25px ;
+  padding-bottom: 25px ;
+  background-color: #d8ebff;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  margin-left: 13%;
+}
+
+.doctor .change-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);;
+    color: var(--main-color);
+}
+@media (max-width: 767px) {
+    .doctor .change-background{
+        display: none;
+    }
+}
+.doctor .fa-angle-left {
+    left: 30px;
+}
+.doctor .fa-angle-right {
+    right: 30px;
+}
+  .doctor .bullets{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -80px;
+    display: flex;
+
+}
+.doctor .bullets li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0b4dea;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.doctor .bullets .active{
+    background-color: var(--main-color);
+    background-color: var(--main-color);
+} */
+  /* End Doctor Section */
+  /* Start Contact */
+/* .contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+.contact .container{
+  display: flex;
+  justify-content: space-between;
+}
+.contact h1{
+  font-size: 60px;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+.contact .content form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contact .content form .main-input:focus {
+  outline: none;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+}
+.contact .content form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  border: none;
+  display: flex;
+  margin-right: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact img{
+  width: 100%;
+} */
+/* End Contact */
+
+/*** Service ***/
+.service-item {
+  transition: .5s;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08);
+}
+
+.service-item .btn {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.service-item:hover .btn {
+  width: 140px;
+}
+/*** Feature ***/
+.feature{
+  background-color: #0f62fe;
+}
+.feature-data{
+ padding: 10px;
+}
+@media (min-width: 992px) {
+  .container.feature {
+      max-width: 100% !important;
+  }
+
+  .feature-text {
+      padding-left: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-text {
+      padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .feature-text {
+      padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+

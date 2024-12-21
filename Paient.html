@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paient</title>
+    <!-- icon -->
+    <link href="images/happiness 1 (1).png" rel="icon">
+    <!-- Home css link -->
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- Paient css link -->
+    <link rel="stylesheet" href="css/paient.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font Awesome Library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!-- aos link for smooth scroling -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <style>
+      input {
+  display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+     </style>
+  </head>
+  <body class="light">
+       <!-- Start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <div class="main-logo">
+          <img class="logo-img" src="images/happiness 1 (1).png" alt="">
+          <a href="#" class="logo">Praecox</a>
+        </div>
+        <ul class="main-nav">
+          <li class="active"><a href="Paient.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href=""><i class="fa-regular fa-bell"></i></a></li>
+          <li>
+            <a href=""><img src="images/paientimg.png" alt="" /></a>
+            <div class="dropdown-content">
+
+              <div class="dropdown-header">
+                <img src="images/paientimg.png" alt="">
+                <!-- <h4 class="name">Welcome, [User Name]</h4> -->
+                <h4 class="name">Welcome</h4>
+            </div>
+              <a href="paientprofile2.html">My Profile</a>
+              <!-- <button id="darkModeButton">Dark Mode</button> -->
+              <div class="dark-section">
+                <input type="checkbox" id="toggle">
+              <a>Dark Mode</a>
+              <label class="toggle" for="toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bx-moon"></i>
+                <span class="ball"></span>
+             </label>
+              </div>
+              <!-- <button id="logout" onclick="logoutPatient();" ><i class="fa-solid fa-right-from-bracket"></i> Logout</button> -->
+              <a id="logout" href="javascript:void(0)">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing -->
+  <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>Welcome, To Praecox World</h1>
+          <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+        </div>
+        <div class="image">
+          <img src="images/rafiki5.png" alt="" />
+        </div>
+        <i class="fas fa-angle-left change-background fa-2x"></i>
+        <i class="fas fa-angle-right change-background fa-2x"></i>
+        <ul class="bullets">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+       </ul>
+      </div>
+    </div>
+    <!-- End Landing -->
+
+       <!-- About Start -->
+       <div id="about" class="about-2 container-xxl py-5" data-aos="fade-down">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="images/about-1.jpg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="images/about-2.jpg" alt=""
+                            style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
+                    <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
+                    <p>You should trust us because we are a dedicated website for Alzheimer's care, offering a comprehensive range of features and services designed to support patients and their caregivers. </p>
+                    <p class="mb-4">Our expertise and commitment to privacy, coupled with positive feedback from satisfied users, make us a reliable choice for your Alzheimer's care needs.
+                    </p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Service Start -->
+     <div id="services" class="service container-xxl py-5" data-aos="fade-down">
+      <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+              <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+              <h1>Health Care Solutions</h1>
+          </div>
+          <div class="row g-4">
+              <div class="box col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="box-2 service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                          style="width: 65px; height: 65px;">
+                          <!-- <i class="fa-solid fa-stethoscope text-primary fs-4"></i> -->
+                          <i class="fa fa-brain text-primary fs-4"></i>
+                      </div>
+                      <h4 class="mb-3">Plan Page</h4>
+                      <p class="mb-4">This comprehensive plan combines tailored exercises and appropriate medications to support cognitive function, physical well-being, and slow down Alzheimer's progression.</p>
+                      <a class="btn" id="exercise-link-services" href="Exercise.html"><i class="fa fa-plus text-primary me-3"></i>Visit Link</a>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="box-2 service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                          style="width: 65px; height: 65px;">
+                          <i class="far fa-clipboard fa-fw text-primary fs-4"></i>
+                      </div>
+                      <h4 class="mb-3">Note Page</h4>
+                      <p class="mb-4">This section serves as a valuable tool for patients to record their symptoms, experiences, and any notable changes in their condition. By regularly documenting observations, concerns, and questions.</p>
+                      <a class="btn" href="note.html"><i class="fa fa-plus text-primary me-3"></i>Visit Link</a>
+                  </div>
+              </div>
+              <div class="box col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="box-2 service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                          style="width: 65px; height: 65px;">
+                          <i class="far fa-comments fa-fw text-primary fs-4"></i>
+                      </div>
+                      <h4 class="mb-3">Chat Page</h4>
+                      <p class="mb-4">This interactive platform enables patients to communicate directly with their doctors, fostering a seamless and convenient channel for discussing concerns, seeking medical advice, and receiving timely guidance.</p>
+                      <a class="btn" href="chat.html"><i class="fa fa-plus text-primary me-3"></i>Visit Link</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- Team Start -->
+  <div class="container-xxl py-5" data-aos="fade-down">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+            <h1>Our Experience Doctors</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/team-4.jpg" alt="">
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+   <!-- Feature Start -->
+   <div id="feature" class=" feature container-fluid feature overflow-hidden my-5 px-lg-0 ">
+    <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class=" feature-data p-lg-5 ps-lg-0">
+                    <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                    <h1 class="text-white mb-4">Why Choose Us</h1>
+                    <p class="text-white mb-4 pb-2">I chose your website because it offers a comprehensive platform that combines vital features for Alzheimer's patients, including a chat 
+                        function for direct communication with doctors, note-taking capabilities, 
+                        AI-based stage diagnosis, and personalized plan suggestions to enhance their daily lives.
+                        It provides a holistic and user-friendly approach to supporting Alzheimer's patients and their caregivers.t</p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                    style="width: 55px; height: 55px;">
+                                    <i class="fa fa-user-md text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Experience</p>
+                                    <h5 class="text-white mb-0">Doctors</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                    style="width: 55px; height: 55px;">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Quality</p>
+                                    <h5 class="text-white mb-0">Services</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                    style="width: 55px; height: 55px;">
+                                    <i class="fa fa-comment-medical text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Positive</p>
+                                    <h5 class="text-white mb-0">Consultation</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                    style="width: 55px; height: 55px;">
+                                    <i class="fa fa-headphones text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">24 Hours</p>
+                                    <h5 class="text-white mb-0">Support</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="images/feature.jpg"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="footer-data">
+            <div class="footer-section">
+                <div class="f-logo">
+                    <img class="logo-img" src="images/happiness 1 (1).png" alt="">
+                    <a href="#" class="logo">Praecox</a>
+                  </div>
+                </div>
+              <div class="footer-section">
+                  <h5 class="text-light mb-4">Address</h5>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Madii, Egypt</p>
+                  <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                  <div class="footer-media">
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h5 class="text-light mb-4">Services</h5>
+                  <a class="btn btn-link text-light" href="Paient.html">Home</a>
+                  <a class="btn btn-link text-light" href="#about">About</a>
+                  <a class="btn btn-link text-light" href="#services">Services</a>
+                  <a class="btn btn-link text-light" href="#feature">Features</a>
+              </div>
+              <div class="footer-section">
+                <h5 class="text-light mb-4">Send US</h5>
+                <p class="mb-3">If you have any problems, please send us</p>
+                <div class="position-relative">
+                    <input class="form-control border-0 w-100 py-2 px-3 mb-2" type="text" placeholder="Type Something">
+                    <button type="button" class="footer-btn">Submit</button>
+                </div>
+            </div>
+          </div>
+          <div class="copyrights">
+            <hr>
+           <p> &copy; 2024 <span>Praecox</span> All Right Reserved</p>
+          </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+  <!-- js for landing -->
+    <script src="js/landing.js"></script>
+   <!-- <script src="js/sidebar.js"></script> -->
+    <script src="js/logout.js"></script>
+    <!-- javascribt libraries -->
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="js/patientprofile.js"></script>
+    <!-- aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const body = document.querySelector("body");
+        const toggle = document.querySelector("#toggle");
+        const sunIcon = document.querySelector(".toggle .bxs-sun");
+        const moonIcon = document.querySelector(".toggle .bx-moon");
+        
+        toggle.addEventListener("change", () => {
+    
+            body.classList.toggle("dark");
+            sunIcon.className = sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
+            moonIcon.className = moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+            
+        });
+        
+    </script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            once: true
+        });
+    </script>
+    <script src="js/diagonistic-stage.js"></script>
+    <script>
+      var ExersiceSidebar = document.getElementById("exercise-link-services");
+      var exerscisepage = localStorage.getItem('Exersicepage');
+      ExersiceSidebar.setAttribute('href',exerscisepage);
+    </script>
+  </body>
+</html>

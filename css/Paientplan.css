@@ -1,0 +1,100 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :root {
+    --main-color: #0f62fe;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Cairo", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  .plan hr{
+    width: 80%;
+  }
+  .plan h1{
+    font-size: 60px;
+    color: var(--main-color);
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    .plan h1 {
+      font-size: 40px;
+    }
+  }
+  .plan .plan-info{
+    font-size: 30px;
+  }
+  .plan .plan-info p{
+    color: #666;
+  }
+  .plan img{
+    width: 50%;
+    border-radius: 5px;
+  }
+  .plan ol{
+    margin-top: 20px;
+  }
+  .plan li{
+     margin-top: 10px;
+     padding: 5px;
+     line-height: 1;
+     font-size: 17px;
+  }
+  /* for doctor */
+  .p{
+    margin: 20px;
+    padding: 20px;
+    background-color: #0f62fe;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: large;
+  }
+  .p:hover {
+    background-color: #51a9ff;
+    transition: 0.3s;
+  }

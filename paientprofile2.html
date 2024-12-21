@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painet Profile</title>
+    <!-- icon -->
+    <link href="images/happiness 1 (1).png" rel="icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <!-- font Awesome Library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body class="light">
+    <div class="page d-flex">
+      <!-- Star SideBar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative txt-c mt-0">Services</h3>
+        <ul>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="paientprofile2.html">
+              <i class="far fa-user fa-fw"></i>
+              <span>My Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" id="exercise-link-sidebar" href="Exercise.html">
+              <i class="far fa-calendar-alt fa-fw"></i>
+              <span>Plan Page</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="note.html">
+              <i class="far fa-clipboard fa-fw"></i>
+              <span>Note Page</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="chat.html">
+              <i class="far fa-comments fa-fw"></i>
+              <span>Chat Page</span>
+            </a>
+          </li>
+          <li>
+            <i class=" d-icon fas fa-sun dark-mode-toggle"></i>
+            <label>Dark Mode </label>
+          </li>
+          <br>
+          <li>
+            <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Star SideBar -->
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="main-logo">
+            <img class="logo-img" src="images/happiness 1 (1).png" alt="" />
+            <a href="Paient.html" class="logo">Praecox</a>
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="images/paientimg.png" alt="" />
+          </div>
+        </div>
+        <!-- End Head -->
+        <div class="home">
+          <div class="container2">
+            <div class="profile-content">
+
+              <div class="content2">
+                <div class="paient-info">
+                  <img src="images/paientimg.png" alt="">
+              </div>
+              <div class="paient-data">
+                  <h1>PERSONAL INFORMATION</h1>
+                  <hr> 
+                  <form class="data">
+                    <label>Name:</label>
+                    <input type="text" class="name" readonly></input>
+                    <br>
+                    <label>E-mail:</label>
+                    <input type="email" class="email" readonly></input>
+                    <br>
+                    <label>Date of birth:</label>
+                    <input type="date" class="date" readonly></input>
+                    <br>
+                    <label>Age:</label>
+                    <input type="text" class="age" readonly></input>
+                    <br>
+                    <label>Gender:</label>
+                    <input type="text" class="gender" readonly></input>
+                    <br>
+                    <label>Phone:</label>
+                    <input type="text" class="phone" readonly></input>
+                    <br>
+                    <label>Address:</label>
+                    <input type="text" class="address" readonly></input>
+                    <br>
+                    <label>SSN:</label>
+                    <input type="text" class="ssn" readonly></input>
+                  </form>
+                  <button id="paientupdate" class="update" onclick="enableEditing()">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button id="paientsave" class="save" style="padding: 5px; display: none; margin: 5px; background-color: #0f62fe; color: #fff; border-color: transparent;">
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <button id="paientcancel" class="cancel" style="padding: 5px; display: none; margin: 5px; background-color: #0f62fe; color: #fff; border-color: transparent;">
+                    <i class="fa-solid fa-times"></i>
+                  </button>
+                  <button id="paientdelete" class="delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+            </div>
+            </div>
+            <a href="ResponsibleProfile.html">
+              <button class="p">To Responsiple Page <i class="fa-solid fa-circle-right"></i></button>
+            </a>
+          </div>
+          <div class="medical-results">
+            <div class="container2">
+              <hr>
+            <h1>Medical Results</h1>
+            <div class="img">
+              <img class="image"alt="" src="">
+            </div>
+            <p class="txt">Date of Uploaded RMI Photo:</p>
+            <p class="Date_Diagnosis"></p>
+            <p class="txt">Diagnostic Stage:</p>
+            <p class="Diagnostic_stage"></p>
+            <p class="txt">Description Diagnosis:</p>
+            <p class="Description_Diagnosis"></p>
+            </div>
+          </div>
+          <div class="medicalhistory-results">
+            <div class="container2">
+              <hr>
+            <div class="img">
+              <img style="width: 450px; height: 450px;" class="image2"alt="" src="">
+            </div>
+            <form action="">
+              <label>About the Photo:</label>
+              <input style="width: 70%; height: 150px;" type="text" class="medical_history" readonly></input>
+            </form>
+            <button id="medicaldelete" class="delete-medical"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="medicalupdate"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button style="padding: 5px; display: none; margin: 5px; background-color: #0f62fe; color: #fff; border-color: transparent;" id="medicalsave" class="save2" style="display: none;">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button style="padding: 5px; display: none; margin: 5px; background-color: #0f62fe; color: #fff; border-color: transparent;" id="medicalcancel" class="cancel2" style="display: none;">
+              <i class="fa-solid fa-times"></i>
+            </button>
+            </div>
+          </div>
+      <!-- Start Footer -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container">
+          <div class="footer-data">
+            <div class="footer-section">
+                <div class="f-logo">
+                    <img class="logo-img" src="images/happiness 1 (1).png" alt="">
+                    <a href="#" class="logo">Praecox</a>
+                  </div>
+                </div>
+              <div class="footer-section">
+                  <h5 class="text-light mb-4">Address</h5>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Madii, Egypt</p>
+                  <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                  <div class="footer-media">
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                              class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h5 class="text-light mb-4">Services</h5>
+                  <a class="btn btn-link text-light" href="Paient.html">Home</a>
+                  <a class="btn btn-link text-light" href="#about">About</a>
+                  <a class="btn btn-link text-light" href="#services">Services</a>
+                  <a class="btn btn-link text-light" href="#feature">Features</a>
+              </div>
+              <div class="footer-section">
+                <h5 class="text-light mb-4">Send US</h5>
+                <p class="mb-3">If you have any problems, please send us</p>
+                <div class="position-relative">
+                    <input class="form-control border-0 w-80  mb-2" type="text" placeholder="Type Something">
+                    <button type="button" class="footer-btn ">Submit</button>
+                </div>
+            </div>
+          </div>
+          <div class="copyrights">
+            <hr>
+           <p> &copy; 2024 <span>Praecox</span> All Right Reserved</p>
+          </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+        </div>
+      </div>
+    </div>
+    <script src="js/patientprofile.js"></script>
+    <script src="js/medical-history.js"></script>
+    <script>
+
+//       function enableEditing() {
+//   var nameInput = document.getElementById("nameInput");
+//   nameInput.removeAttribute("readonly");
+//   nameInput.focus();
+// }
+
+    const sunIcon = document.querySelector('.fa-sun');
+    const body = document.querySelector('body');
+    let isDarkMode = false;
+
+    function toggleDarkMode() {
+      isDarkMode = !isDarkMode;
+
+      if (isDarkMode) {
+        sunIcon.classList.remove('fa-sun');
+        sunIcon.classList.add('fa-moon');
+        body.classList.add('dark-mode');
+      } else {
+        sunIcon.classList.remove('fa-moon');
+        sunIcon.classList.add('fa-sun');
+        body.classList.remove('dark-mode');
+      }
+    }
+
+    sunIcon.addEventListener('click', toggleDarkMode);
+  </script>
+       <script src="js/diagonistic-stage.js"></script>
+    <!-- <script src="js/landing.js" ></script> -->
+    <script>
+      var ExersiceSidebar = document.getElementById("exercise-link-sidebar");
+      var exerscisepage = localStorage.getItem('Exersicepage');
+      ExersiceSidebar.setAttribute('href',exerscisepage);
+    </script>
+  </body>
+</html>

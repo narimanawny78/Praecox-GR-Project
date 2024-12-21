@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    /* background: #d8ebff; */
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+    /* box-shadow: -2px -1px 14px 0px #555; */
+}
+ img{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.container h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #1e1e1e;
+}
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.input-box input:focus{
+    box-shadow: 0 1px 0 #0000001a;
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.gender input{
+    accent-color: #0c0075;
+}
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+.form a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  float: right;
+  clear: both;
+}
+.form a:hover{
+ color: #0f62fe;
+}
+.gender label{
+    color: #333;
+}
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 16px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.form .btn input{
+    height: 50px;
+    width: 50%;
+    background-color: #0f62fe;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    border-radius: 45px;
+    margin-top: 30px;
+    margin-left: 10px;
+    transition: all 0.6s ease;
+}
+.form .btn input:hover{
+    background-color: #007bff;
+}
+/* Responsive Code */
+@media screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where( .gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+/* upload buttons */
+
+.form .input-box button{
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    color: #0f62fe;
+    font-size: 17px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.form .input-box label,
+.form .gender-box h3{
+    color:#0f62fe ;
+}
+
+body {
+    color: #333; /* Default light mode text color */
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #f5f5f5; /* Dark mode text color */
+  }
+ .dark-mode form {
+    background-color: #333;
+    color: #fff;
+   
+ }
+ /* .dark-mode .container {
+    box-shadow:  3px 3px 3px #14181e,
+    -3px -3px 3px #14181e ;
+ } */
+ .dark-mode input{
+    color: #fff;
+    background-color: #333;
+ }
+  .dark-mode-toggle {
+    position: absolute;
+    bottom: -10px;
+    right: -30px;
+    color: #0f62fe;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #0f62fe;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  .dark-mode .form button {
+    background-color: #333;
+  }
+  
+  .dark-mode .wrapper {
+    background-color: #333;
+  }
+  /* upload */
+  ::selection{
+    color: #fff;
+    background-color:#0f62fe;
+  
+  }
+  .wrapper{
+    width: 700px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+  }
+  .wrapper header{
+    color:#0f62fe;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .wrapper form{
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #0f62fe;
+    margin-bottom: 30px;
+  }
+  .wrapper form :where(i, p){
+    color:#0f62fe;
+  }
+ .wrapper form i{
+    font-size: 50px;
+  }
+ .wrapper form p{
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  section .row{
+    margin-bottom: 10px;
+    background: #E9F0FF;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section .row i{
+    color:#0f62fe;
+    font-size: 30px;
+  }
+  section .details span{
+    font-size: 14px;
+  }
+  .progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+  }
+  .progress-area .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+  }
+  .progress-area .content .progress-bar{
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+  }
+  .content .progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background:#0f62fe;
+    border-radius: inherit;
+  }
+  .uploaded-area{
+    max-height: 232px;
+    overflow-y: scroll;
+  }
+  .uploaded-area.onprogress{
+    max-height: 150px;
+  }
+  .uploaded-area::-webkit-scrollbar{
+    width: 0px;
+  }
+  .uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+  }
+  .uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+  }
+  .uploaded-area .row .details .size{
+    color: #404040;
+    font-size: 11px;
+  }
+  .uploaded-area i.fa-check{
+    font-size: 16px;
+  }
+  
+   .wrapper .btn-submit{
+    background-color: #0f62fe;
+    color: #fff;
+    cursor: pointer;
+    width: 30%;
+  }
+
+  
+  /* Styles for the pop-up */
+  /* .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  } */
+
+    /* Styles for the pop-up */
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+  
+      .popup-content {
+        /* background-color: #fff; */
+        padding: 20px;
+        border-radius: 6px;
+      }
+  
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: #000;
+      }
+
+  /* Rest of the styles */
+  .input-box {
+    margin-bottom: 20px;
+  }
+
+ .wrapper button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
